@@ -6,5 +6,5 @@ txt = open("files.txt", "w")
 
 for root, dirs, files in os.walk(path):
     for file in files:
-        if file.endswith(".cs"):
-        	txt.write(file + " linguist-vendored=false" + "\n")
+        if file.endswith(".cginc"):
+        	txt.write(file + " linguist-detectable=false" + "\n")
